@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+body{
+    font-family: "HGP明朝B";
+    min-width: 1200px;
+}
+
 /* headerリストセット */
 /* header_1 */
 .header_1{
