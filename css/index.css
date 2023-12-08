@@ -1,5 +1,24 @@
 @charset "utf-8";
 
+
+.container{
+    position: relative;
+}
+
+.container p{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide_img{
+    width: 1400px;
+    height: 600px;
+}
+
+.slide_img img{
+    width: 100%;
+  
 /* 本舘陽太 */
 /* topics */
 .body {
