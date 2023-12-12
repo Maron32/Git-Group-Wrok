@@ -1,5 +1,36 @@
 @charset "utf-8";
 
+/*外内*/
+
+.Writer h1{
+    display: flex;
+    margin: 80px 100px;
+}
+
+.cent{
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 0 175px;
+}
+
+.Writer-info a {
+    text-decoration: none;
+    transform: translateY(-5px);
+    color:black;
+}
+
+.Writer img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 1000px; 
+    margin-bottom: 10px;
+}
+/*外内*/
+
+
 
 .container{
     position: relative;
