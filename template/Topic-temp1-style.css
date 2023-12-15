@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* 本舘陽太 */
+.food_title {
+    position: relative;
+    margin: 30px 30px 60px;
+    text-align: center;
+}
+
+.food_title_img img {
+    width: 1100px;
+    height: 150px;
+}
+
+.food_title_p {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    top: 20px;
+    left: 700px;
+}
+
+.food_main {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
+}
+
+.food_main img {
+    width: 280px;
+    height: 240px;
+}
+
+.food_main_1 {
+    width: 280px;
+    height: 400px;
+    /* border: solid 1px black; */
+    overflow-wrap: normal;
+    background-color: #faebd7;
+    color: black;
+}
+
+.food_main_1 p {
+    margin: 5px 10px 0 20px;
+}
+
+h3 {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.food_main a {
+    text-decoration: none;
+}
+
+/* しゅんってなるやつ */
+
+.Topics1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.Topics_1::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    opacity: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    transition: .3s;
+
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    opacity: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    transition: .3s;
+}
+
+.Topics1:hover .text {
+    background: rgba(190, 91, 70, 0.6);
+    opacity: 1;
+}

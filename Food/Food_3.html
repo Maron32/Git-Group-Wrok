@@ -1,15 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
     <link rel="stylesheet" href="../css/All-style.css">
-    <link rel="stylesheet" href="css/Food_3.css">
+    <link rel="stylesheet" href="css/Food_1.css">
+    <link rel="stylesheet" href="../template/Topic-temp-style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="body">
+        <main>
+            <div class="title">
+                <h1>冷麺</h1>
+            </div>
+            <div class="item" id="first">
+                <div class="text">
+                    <div class="text_img">
+                        <img src="#" alt="（仮）">
+                    </div>
+                    <div class="text_text">
+                        <p>ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。
+                        </p>
+                    </div>
+                </div>
+                <div class="text">
+                    <div class="text_text">
+                        <p>ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。
+                        </p>
+                    </div>
+                    <div class="text_img">
+                        <img src="#" alt="（仮）">
+                    </div>
+                </div>
+                <div class="text">
+                    <div class="text_img">
+                        <img src="#" alt="（仮）">
+                    </div>
+                    <div class="text_text">
+                        <p>ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="menu" id="page_menu">
+                <li><a href="#first">>11111</a></li>
+                <li><a href="#">>22222</a></li>
+                <li><a href="#">>33333</a></li>
+                <li><a href="#">>44444</a></li>
+                <li><a href="#">>55555</a></li>
+            </div>
+        </aside>
+    </div>
+    <div class="Company">
+        <div class="Company_map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.7901005278054!2d139.87781937483462!3d35.632900732629025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60187d03114737b3%3A0xe4d93636d509d3cb!2z5p2x5Lqs44OH44Kj44K644OL44O844Op44Oz44OJ!5e0!3m2!1sja!2sjp!4v1702514764269!5m2!1sja!2sjp"
+                width="300" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="Company_adress">
+            <h2>住所</h2>
+            <h3>店の名前</h3>
+            <p>〒○○○-○○○</p>
+            <p>岩手県○○市○○町〇丁目○○-○○</p>
+            <p>☏　000-0000-0000</p>
+            <p>fax 000-0000-0000</p>
+        </div>
+    </div>
 </body>
+<script>
+    $('#page_menu a[href*="#"]').click(function () {
+        var elmHash = $(this).attr('href');
+        var pos = $(elmHash).offset().top;
+        $('body,html').animate({ scrollTop: pos }, 500);
+        return false
+    })
+</script>
+
+
+<footer>
+    <div class="footer_flex">
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.7227480856345!2d141.13102267477117!3d39.700937298895845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f857633390c2a33%3A0x7c805e4c44ea2745!2z5YWs55uK6LKh5Zuj5rOV5Lq65bKp5omL55yM6Kaz5YWJ5Y2U5Lya!5e0!3m2!1sja!2sjp!4v1701744317281!5m2!1sja!2sjp"
+                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="adress">
+            <h3>岩手県観光協会</h3>
+            <p>〒020-0045</p>
+            <p>盛岡市盛岡駅西通二丁目9番1号（マリオス3F）</p>
+            <p>電話：019-651-0626｜FAX：019-651-0637</p>
+        </div>
+        <div class="footer_logo">
+            <img src="../img/Logo.png" alt="Logo">
+        </div>
+    </div>
+    <p class="copyright">&copy; 盛岡情報ビジネス＆デザイン専門学校</p>
+</footer>
+
 </html>
