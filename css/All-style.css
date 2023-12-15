@@ -14,9 +14,13 @@ body {
     display: flex;
 }
 
-.header_1 img {
+.header_1 a{
     width: 40%;
     height: 140px;
+}
+
+.header_1 a img{
+    width: 100%;
 }
 
 /* header_2_1 */
