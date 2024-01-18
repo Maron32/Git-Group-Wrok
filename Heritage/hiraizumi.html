@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/hiraizumi.css">
+    <link rel="stylesheet" href="../css/All-style.css">
+    <link rel="icon" href="../img/Logo.png">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body">
+        <main>
+            <div class="title">
+                <h1>平泉-中尊寺</h1>
+            </div>
+            <div class="item">
+                <div class="text" id="first">
+                    <div class="text_img">
+                        <img src="img/chusonji.jpg" alt="（仮）">
+                    </div>
+                    <div class="text_text">
+                        <p>　中尊寺は、平泉町にある寺で、平泉―仏国土（浄土）を表す建築・庭園及び考古学的遺跡群―の構成資産の一つです。<br><br>
+                        　奥州藤原氏三代のゆかりの寺として有名で、数々の美術、工芸、建築物が貯蔵されていてその多くが文化財として登録されています。<br><br>
+                        　また、松尾芭蕉が「夏草や　兵どもが　夢のあと」と詠んだ地としても有名です。</p>
+                    </div>
+                </div>
+                <div class="text" id="second">
+                    <div class="text_text">
+                        <p>　金色堂は、中尊寺の中でもっとも有名な建造物です。現在は保護のため金色堂自体が建物に覆われています。<br><br>
+                        　この建物は、内外が金箔で装飾されています。その技術はシルクロードを渡ってもたらされたものなどがあり、歴史が感じられます。<br><br>
+                        　京都の金閣寺にも劣らない華麗さを堪能してはいかがでしょうか。</p>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/konjikido.jpg" alt="（仮）">
+                    </div>
+                </div>
+                <div class="text" id="third">
+                    <div class="text_img">
+                        <img src="img/konzikido-miira.jpg" alt="（仮）">
+                    </div>
+                    <div class="text_text">
+                        <p>　金色堂には、奥州藤原氏の三代のミイラが安置されています。画像の下部に保存されていました。日本で、権力者のミイラが三代にわたって保存されているのは平泉のみとされています。<br><br>
+                            　これらのミイラは中央檀が藤原清衡、右檀が基衡、左檀が秀衡に加え、泰衡の首級が参拝者から向かって左側に位置する右壇に納められています。<br><br>
+                            　金色堂の華麗さを堪能するだけでなく、これらのミイラに手を合わせてみるのもよいかもしれません。</p>
+                    </div>
+                </div>
+                <div class="text" id="forth">
+                    <div class="text_text">
+                        <p>　寺院巡りをするなかでの醍醐味の一つとして御朱印をいただくことも挙げられると思います。中尊寺では、10か所以上で御朱印をいただくことができます。<br><br>
+                            　その中でも、金色堂でいただける御朱印は、見開きいっぱいに書いてもらうことができます。しかし、持参した御朱印帳では、１ページのものしか書いてもらえず、見開きのものをいただくには御朱印帳を購入しなければならないので注意をしましょう。
+                        </p>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/konjikidou-gosyuin.jpg" alt="（仮）">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="menu" id="page_menu">
+                <li><a href="#first">>中尊寺とは</a></li>
+                <li><a href="#second">>金色堂の装飾</a></li>
+                <li><a href="#third">>金色堂のミイラ</a></li>
+                <li><a href="#forth">>御朱印</a></li>
+            </div>
+        </aside>
+    </div>
+    <div class="Company">
+        <div class="Company_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6201.217184911192!2d141.09235875390618!3d39.0014285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f88cde73dc30bb5%3A0xeaf1470e739e8281!2z5Lit5bCK5a-6!5e0!3m2!1sja!2sjp!4v1705538894446!5m2!1sja!2sjp" width="300" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="Company_adress">
+            <h2>住所</h2>
+            <h3>中尊寺</h3>
+            <p>〒029-4195</p>
+            <p>岩手県西磐井郡平泉町平泉衣関２０２</p>
+            <p>☏　0191-462-211</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    $('#page_menu a[href*="#"]').click(function () {
+        var elmHash = $(this).attr('href');
+        var pos = $(elmHash).offset().top;
+        $('body,html').animate({scrollTop:pos}, 500);
+        return false
+    })
+</script>
+</html>
