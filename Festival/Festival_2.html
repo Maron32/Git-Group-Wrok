@@ -3,13 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
     <link rel="stylesheet" href="../css/All-style.css">
     <link rel="stylesheet" href="css/Festival_2.css">
-    <title>Document</title>
+    <title>チャグチャグ馬コ</title>
 </head>
+
 <body>
-    
+    <div class="body">
+        <main>
+            <div class="title">
+                <h1>チャグチャグ馬コ</h1>
+            </div>
+            <div class="item">
+                <div class="text" id="first">
+                    <div class="text_img">
+                        <img src="img/チャグチャグ馬コ列.jpg" alt="鬼越蒼前神社">
+                    </div>
+                    <div class="text_text">
+
+                        <p>「チャグチャグ馬コ」は使役に使われる馬に感謝し、一年に一度飾りたてその労をねぎらうのが目的です。 
+                        </p>
+                        <dr>
+                            <p> 祭りに参加する馬の中には、伐採作業に使役馬として働いている馬もいます。</p><dr>
+                                <p> 山の仕事に比べればチャグチャグの装束など軽いもの。 行列の中でひときわ堂々とした姿を見せます。</p>
+                    </div>
+                </div>
+                <div class="text" id="second">
+                    <div class="text_text">
+                        <p>1597年、沢内村の馬が野良しごとの途中で暴れ出し、滝沢まで駆けてきて死んでしまった。</p><dr>
+                            <p>村人たちはこれを手厚く葬って祠を建てた。</p><dr>
+                                <p>この祭りは、馬の死から始まったものでありながら、村人たちにとっては神聖で重要な行事となり、地域の結束を強化する機会ともなっています。蒼前神社は、村の歴史と信仰を背負って、村人たちにとって不可欠な存在となったのでした。</p><dr>
+                                <p>これが蒼前神社の始まりといわれ、以来５月５日の端午の節句には仕事を休んで馬に飾りをつけ、この神社に参拝するようになった。</p><dr>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/鬼越蒼前神社.jpg" alt="現在">
+                    </div>
+                </div>
+                <div class="text" id="third">
+                    <div class="text_img">
+                        <img src="img/チャグチャグ馬コ玩具.jpg" alt="玩具">
+                    </div>
+                    <div class="text_text">
+                        <h3>チャグチャグ馬コ玩具</h3><dr>
+                        <p>チャグチャグ馬コ行進に因んで作られた民芸品の1つで、戦後に盛岡近郊の人々の手内職として始められたものです。
+                        </p><dr>
+                            <p>本物の馬コ同様に着飾り、「チャグチャグ」と可愛らしい鈴の音を響かせます。 1つ1つ手作りで、縁起物として贈り物に喜ばれています。</p><dr>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="menu" id="page_menu">
+                <li><a href="#first">>チャグチャグ馬コ</a></li>
+                <li><a href="#second">>鬼越蒼前神社</a></li>
+                <li><a href="#third">>玩具</a></li>
+            </div>
+        </aside>
+    </div>
+    <div class="Company">
+        <div class="Company_map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.7901005278054!2d139.87781937483462!3d35.632900732629025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60187d03114737b3%3A0xe4d93636d509d3cb!2z5p2x5Lqs44OH44Kj44K644OL44O844Op44Oz44OJ!5e0!3m2!1sja!2sjp!4v1702514764269!5m2!1sja!2sjp"
+                width="300" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="Company_adress">
+            <h2>住所</h2>
+            <h3>店の名前</h3>
+            <p>〒○○○-○○○</p>
+            <p>岩手県○○市○○町〇丁目○○-○○</p>
+            <p>☏　000-0000-0000</p>
+            <p>fax 000-0000-0000</p>
+        </div>
+    </div>
 </body>
+
+<script>
+    $('#page_menu a[href*="#"]').click(function () {
+        var elmHash = $(this).attr('href');
+        var pos = $(elmHash).offset().top;
+        $('body,html').animate({ scrollTop: pos }, 500);
+        return false
+    })
+</script>
+
 </html>

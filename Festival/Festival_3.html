@@ -7,9 +7,84 @@
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
     <link rel="stylesheet" href="../css/All-style.css">
     <link rel="stylesheet" href="css/Festival_3.css">
-    <title>Document</title>
+    <title>みちのく芸能まつり</title>
 </head>
+
 <body>
-    
+    <div class="body">
+        <main>
+            <div class="title">
+                <h1>みちのく芸能まつり</h1>
+            </div>
+            <div class="item">
+                <div class="text" id="first">
+                    <div class="text_img">
+                        <img src="img/みちのく列.jpg" alt="みちのく概要">
+                    </div>
+                    <div class="text_text">
+
+                        <p>北上市は民俗芸能の宝庫と言われ、伝承活動をしている民俗芸能団体数は日本有数です。８月の 第一金曜から三日間開催される「北上・みちのく芸能まつり」では、街のあちこちで１００を越す民俗芸能が披露 されます。 
+                        </p>
+                        <dr>
+                            <p>約500ｍの道路を8つの会場に分け、100団体を超える民俗芸能を鑑賞することが出来ます。</p><dr>
+                                <p>その中でもフィナーレを飾る「鬼剣舞大群舞」では、かがり火を灯して200人の踊り手が一斉に「一番庭」と「刀剣舞の狂い」の２演目を披露します。かがり火に浮かぶ鬼剣舞は、一層激しく荘厳さを増し、その光景は圧巻です。</p>
+                    </div>
+                </div>
+                <div class="text" id="second">
+                    <div class="text_text">
+                        <p>鬼剣舞の起源は、1300年前にさかのぼります。大宝年間(701～704)山伏・役行者が天下泰平、五穀豊穣、万民繁栄を願って舞った念仏踊りが始まりとされ、その後、戦の出陣・凱旋の際に踊られたのが広く世に伝わったと言われています。</p><dr>
+                                <p>いかめしい面をつけて踊ることから一般に「鬼剣舞」と呼ばれていますが、鬼ではなく仏の化身であり、面には角がありません。</p><dr>
+                                <p>面の色には白・青・赤・黒の4色があり、白面だけは「一剣舞」と呼ばれ、リーダー格の者1人だけが付けます。</p><dr>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/みちのくホール.jpg" alt="鬼剣舞">
+                    </div>
+                </div>
+                <div class="text" id="third">
+                    <div class="text_img">
+                        <img src="img/みちのく花火.jpg" alt="花火">
+                    </div>
+                    <div class="text_text">
+                        <p>北上・みちのく芸能まつりのフィナーレを飾る北上川河畔での花火大会。</p><dr>
+                        <p>一万個のトロッコ（灯ろう）が北上川を流れ、その上空には選りすぐりの花火師による一万発を超える花火が打ち上げられます。
+                        </p><dr>
+                            <p>花火打ち上げには毎年テーマを設け、個々のプログラムに合わせた花火を作成し、そのイメージで音楽を選定します。「プログラム＋花火＋音楽」このコラボレーションがこの花火大会の魅力となっている。</p><dr>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="menu" id="page_menu">
+                <li><a href="#first">>みちのく芸能まつり</a></li>
+                <li><a href="#second">>鬼剣舞</li>
+                <li><a href="#third">>花火</a></li>
+            </div>
+        </aside>
+    </div>
+    <div class="Company">
+        <div class="Company_map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.7901005278054!2d139.87781937483462!3d35.632900732629025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60187d03114737b3%3A0xe4d93636d509d3cb!2z5p2x5Lqs44OH44Kj44K644OL44O844Op44Oz44OJ!5e0!3m2!1sja!2sjp!4v1702514764269!5m2!1sja!2sjp"
+                width="300" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="Company_adress">
+            <h2>住所</h2>
+            <h3>店の名前</h3>
+            <p>〒○○○-○○○</p>
+            <p>岩手県○○市○○町〇丁目○○-○○</p>
+            <p>☏　000-0000-0000</p>
+            <p>fax 000-0000-0000</p>
+        </div>
+    </div>
 </body>
+
+<script>
+    $('#page_menu a[href*="#"]').click(function () {
+        var elmHash = $(this).attr('href');
+        var pos = $(elmHash).offset().top;
+        $('body,html').animate({ scrollTop: pos }, 500);
+        return false
+    })
+</script>
+
 </html>

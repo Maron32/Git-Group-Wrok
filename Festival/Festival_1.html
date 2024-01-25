@@ -1,15 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
-    <link rel="stylesheet" href="../css/All-style.css">
     <link rel="stylesheet" href="css/Festival_1.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/All-style.css">
+    <title>さんさ踊り</title>
 </head>
+
 <body>
-    
+    <div class="body">
+        <main>
+            <div class="title">
+                <h1>さんさ踊り</h1>
+            </div>
+            <div class="item">
+                <div class="text" id="first">
+                    <div class="text_img">
+                        <img src="img/鬼の手形.jpg" alt="鬼の手形">
+                    </div>
+                    <div class="text_text">
+
+                        <p>さんさ踊りの発祥として多く語られているのは、盛岡市名須川町の三ツ石神社にまつわる「三ツ石伝説」に由来するものです。 
+                        </p>
+                        <dr>
+                            <p> 昔、人々を苦しめていた鬼が三ツ石の神様によって退治され、降参の印に誓約の手形を石に残して去ったとき、喜んだ人々が三ツ石のまわりで「さんさ,さんさと踊り囃した」のがさんさ踊りの始まりと伝えられています。</p>
+                    </div>
+                </div>
+                <div class="text" id="second">
+                    <div class="text_text">
+                        <p>藩政時代から伝わる盆踊り「さんさ踊り」が市内の目抜き通りで４日間繰り広げられる。</p><dr>
+                            <p>踊り手、笛、太鼓あわせて２万人の群舞となり、神輿やバトントワラー、マーチングバンドもパレードして祭りを盛り上げる。</p><dr>
+                                <p>踊り手2万人の浴衣姿も鮮やかに、600本の笛、その数日本一の5000個もの太鼓がビル街に鳴り響く。</p><dr>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/さんさ全体.jpg" alt="さんさ全体">
+                    </div>
+                </div>
+                <div class="text" id="third">
+                    <div class="text_img">
+                        <img src="img/さんさ踊り.jpg" alt="ミスさんさ">
+                    </div>
+                    <div class="text_text">
+                        <p>「ミスさんさ踊り」は、盛岡市内と近隣市町に住む「さんさ踊りが大好き」な女性5人が毎年コンテストによって選ばれる。
+                        </p><dr>
+                            <p>8月に開催されるパレードの先頭で踊りを披露して祭りを盛り上げるほか、年間を通じて県内外で盛岡さんさ踊りの魅力をアピールする活動に取り組む。</p><dr>
+                                <p>「さんさ太鼓連」はミス太鼓・ミス横笛・うたっこ娘で構成する団体で、ミスさんさ踊りと共にパレードや派遣事業などに参加する。</p><dr>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="menu" id="page_menu">
+                <li><a href="#first">>さんさ歴史</a></li>
+                <li><a href="#second">>さんさ踊り</a></li>
+                <li><a href="#third">>ミスさんさ</a></li>
+            </div>
+        </aside>
+    </div>
+    <div class="Company">
+        <div class="Company_map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.7901005278054!2d139.87781937483462!3d35.632900732629025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60187d03114737b3%3A0xe4d93636d509d3cb!2z5p2x5Lqs44OH44Kj44K644OL44O844Op44Oz44OJ!5e0!3m2!1sja!2sjp!4v1702514764269!5m2!1sja!2sjp"
+                width="300" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="Company_adress">
+            <h2>住所</h2>
+            <h3>店の名前</h3>
+            <p>〒○○○-○○○</p>
+            <p>岩手県○○市○○町〇丁目○○-○○</p>
+            <p>☏　000-0000-0000</p>
+            <p>fax 000-0000-0000</p>
+        </div>
+    </div>
 </body>
+
+<script>
+    $('#page_menu a[href*="#"]').click(function () {
+        var elmHash = $(this).attr('href');
+        var pos = $(elmHash).offset().top;
+        $('body,html').animate({ scrollTop: pos }, 500);
+        return false
+    })
+</script>
+
 </html>
