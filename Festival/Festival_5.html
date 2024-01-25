@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="../css/All-style.css">
+    <link rel="stylesheet" href="css/Festival_5.css">
+    <title>春の藤原まつり</title>
+</head>
+
+
+<body>
+    <div class="body">
+        <main>
+            <div class="title">
+                <h1>藤原まつり</h1>
+            </div>
+            <div class="item">
+                <div class="text" id="first">
+                    <div class="text_img">
+                        <img src="img/春の藤原まつり.jpg" alt="春の藤原まつり">
+                    </div>
+                    <div class="text_text">
+                            <p>春の藤原まつりは、例年5月1日から5日までの5日間開催される。中尊寺や毛越寺で藤原四代の追善法要、稚児行列、開山護摩法要、郷土芸能、能や狂言の奉納が行われ、最終日には武蔵坊弁慶に因んで巨大な餅を抱えて運ぶ力自慢の競技会「弁慶力餅競技大会」が平泉駅前で開催される。</p><dr>
+                                <p>特に有名なのが、ゴールデンウィーク中の5月3日に開催される「源義経公東下り行列」である。</p><dr>
+                                    
+                    </div>
+                </div>
+                <div class="text" id="second">
+                    <div class="text_text">
+                                <p>秋の藤原まつりは、10月20日から11月15日まで開催される「中尊寺菊まつり」と併せて例年11月1日から3日までの3日間開催される。1日目は、藤原四代の公追善法要（中尊寺）と公報恩法要（毛越寺）、他に稚児行列や郷土芸能などが行われる。</p><dr>
+                                <p>2日目は中尊寺と毛越寺で郷土芸能が催され、3日目は郷土芸能の他、中尊寺における能や狂言の奉納、毛越寺では浄土庭園で「延年の舞」が披露される。</p><dr>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/秋の藤原まつり.jpg" alt="秋の藤原まつり">
+                    </div>
+                </div>
+                <div class="text" id="third">
+                    <div class="text_img">
+                        <img src="img/藤原まつり俳優.jpg" alt="俳優">
+                    </div>
+                    <div class="text_text">
+                        <p>源義経公東下り行列は、義経主従が兄である源頼朝の追討から逃れて平泉に辿り着いた時、藤原秀衡や地元民に歓迎された故事に倣ったもので、総勢約100名の参加者で平安絵巻を再現する。</p><dr>
+                        <p>一行は地元の名士などが務めるが、義経公役は1973年頃から若い俳優・タレントなどの男性芸能人が務めており、東下り行列の知名度が定着して以降は沿道に例年16万人から18万人程の見物客が訪れる。
+                        </p><dr>
+                            <p></p><dr>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="menu" id="page_menu">
+                <li><a href="#first">>春の藤原まつり</a></li>
+                <li><a href="#second">>秋の藤原まつり</li>
+                <li><a href="#third">>源義経公東下り行列</a></li>
+            </div>
+        </aside>
+    </div>
+    <div class="Company">
+        <div class="Company_map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.7901005278054!2d139.87781937483462!3d35.632900732629025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60187d03114737b3%3A0xe4d93636d509d3cb!2z5p2x5Lqs44OH44Kj44K644OL44O844Op44Oz44OJ!5e0!3m2!1sja!2sjp!4v1702514764269!5m2!1sja!2sjp"
+                width="300" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="Company_adress">
+            <h2>住所</h2>
+            <h3>店の名前</h3>
+            <p>〒○○○-○○○</p>
+            <p>岩手県○○市○○町〇丁目○○-○○</p>
+            <p>☏　000-0000-0000</p>
+            <p>fax 000-0000-0000</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    $('#page_menu a[href*="#"]').click(function () {
+        var elmHash = $(this).attr('href');
+        var pos = $(elmHash).offset().top;
+        $('body,html').animate({ scrollTop: pos }, 500);
+        return false
+    })
+</script>
+
+</html>
