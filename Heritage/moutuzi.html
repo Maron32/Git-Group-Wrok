@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/All-style.css">
+    <link rel="stylesheet" href="css/moutuzi.css">
+    <link rel="icon" href="../img/Logo.png">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body">
+        <main>
+            <div class="title">
+                <h1>平泉-毛越寺</h1>
+            </div>
+            <div class="item">
+                <div class="text" id="first">
+                    <div class="text_img">
+                        <img src="img/moutuzi.jpg" alt="（仮）">
+                    </div>
+                    <div class="text_text">
+                        <p>　岩手県西磐井郡平泉町（創建時は陸奥国磐井郡平泉）に所在する、天台宗の寺院です。中尊寺と同じく平泉―仏国土（浄土）を表す建築・庭園及び考古学的遺跡群―の構成資産の一つです。<br><br>
+                        　境内には多くの史跡があり、歴史的建造物を堪能することができます。</p>
+                    </div>
+                </div>
+                <div class="text" id="second">
+                    <div class="text_text">
+                        <p>　浄土庭園とは仏堂と苑池とが一体として配された庭園で、
+                        毛越寺では北に塔山と呼ばれる小山を背景として、広々とした苑地美観が展開します。<br><br>
+                        　大泉が池は浄水をたたえ、その周辺には、州浜、荒磯風の水分け、浪返しにあたる立石、
+                        枯山水風の築山といった石組みや、池に水を引き入れる遣水など、自然の景観が表されています。</p>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/moutuzi-teien.jpg" alt="（仮）">
+                    </div>
+                </div>
+                <div class="text" id="third">
+                    <div class="text_img">
+                        <img src="img/moutuzi-zazen.jpg" alt="（仮）">
+                    </div>
+                    <div class="text_text">
+                        <p>　毛越寺では、昔ながらの坐禅を体験することができます。<br><br>
+                        　坐禅とは、正しい姿勢で坐り、精神統一を行うことです。禅宗における基本の修行ともいえます。仏教の開祖であるお釈迦様は、インドにあるブタガヤの菩薩樹の下、7日7晩の坐禅を行った後に悟りを開かれました。現代でも、坐禅をすることで心の働きを整えることができます。<br><br>
+                        　日頃の慌ただしい生活からちょっと離れて毛越寺で坐禅を組んでみませんか？</p>
+                    </div>
+                </div>
+                <div class="text" id="forth">
+                    <div class="text_text">
+                        <p>　毛越寺では、特徴的な御朱印をいただくことができます。写真のような寺院の紋章だけでなく、庭園の切り絵が入った御朱印をいただくことができます。<br><br>
+                        　全国には様々な御朱印がありますが、なかなか切り絵が入った御朱印はないと思います。<br><br>
+                        　毛越寺を訪れた記念にもなりますので、ぜひいただいてみてはどうでしょうか。</p>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/moutuzi-gosyuin.jpg" alt="（仮）">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="menu" id="page_menu">
+                <li><a href="#first">>毛越寺とは</a></li>
+                <li><a href="#second">>浄土庭園</a></li>
+                <li><a href="#third">>坐禅体験</a></li>
+                <li><a href="#forth">>御朱印</a></li>
+            </div>
+        </aside>
+    </div>
+    <div class="Company">
+        <div class="Company_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.216284626825!2d141.10512852464618!3d38.98755989138119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f88ce053535d145%3A0x5c34e4d4b252f13e!2z5q-b6LaK5a-6!5e0!3m2!1sja!2sjp!4v1706143998461!5m2!1sja!2sjp" width="300" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="Company_adress">
+            <h2>住所</h2>
+            <h3>毛越寺</h3>
+            <p>〒029-4102</p>
+            <p>岩手県西磐井郡平泉町平泉大沢５８</p>
+            <p>☏　0191-46-2331</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    $('#page_menu a[href*="#"]').click(function () {
+        var elmHash = $(this).attr('href');
+        var pos = $(elmHash).offset().top;
+        $('body,html').animate({scrollTop:pos}, 500);
+        return false
+    })
+</script>
+</html>

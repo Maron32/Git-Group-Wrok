@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="../css/All-style.css">
+    <link rel="stylesheet" href="css/akarenga.css">
+    <link rel="icon" href="../img/Logo.png">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body">
+        <main>
+            <div class="title">
+                <h1>岩手銀行赤レンガ館</h1>
+            </div>
+            <div class="item">
+                <div class="text"  id="first">
+                    <div class="text_img">
+                        <img src="img/akarenga.jpg" alt="（仮）">
+                    </div>
+                    <div class="text_text">
+                        <p>　岩手銀行赤レンガ館は、1911（明治44）年に盛岡銀行の本店行舎として落成し、1936（昭和11）年に岩手殖産銀行（のちに行名を岩手銀行に変更）がこの建物を譲り受け、本店として利用しはじめました。その後、1983（昭和58）年に岩手銀行新社屋完成に伴い中ノ橋支店となりました。<br><br>
+                        　設計は東京駅でも知られる、辰野・葛西建築設計事務所によるもので、辰野金吾が設計した建築としては東北地方に唯一残る作品です。</p>
+                    </div>
+                </div>
+                <div class="text" id="second">
+                    <div class="text_text">
+                        <p>　赤レンガ館を設計した辰野金吾は、日本で最初の建築家の一人とされています。<br><br>
+                        　辰野金吾は、ヨーロッパへ渡り建築に深くかかわり、帰国後は大学での建築教育にも貢献しながら日本銀行本店などを設計。“辰野式”と呼ばれる建築が全国に建つようになるのは、民間の建築家として事務所を立ち上げた1903年以降のことです。<br><br>
+                        　その後200以上の建築物を手掛けたと言われており、現存するものの多くは重要文化財に指定されています。</p>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/akarenga-tatuno.jpg" alt="（仮）">
+                    </div>
+                </div>
+                <div class="text" id="third">
+                    <div class="text_img">
+                        <img src="img/akarenga-muryou.jpg" alt="（仮）">
+                    </div>
+                    <div class="text_text">
+                        <p>　赤レンガ館には、無料エリアと有料エリアがあり、まずは無料エリアから紹介します。<br><br>
+                            　無料エリアは、地域や県内の産業・文化・経済活性化へ寄与するためのゾーンです。どなたでも利用できるスペースと、近隣の方々をはじめとする多くの県民・市民がくつろぎに気軽に立ち寄れるスペースがあります。また、イベント開催や地域交流活動等に利用できる多目的ホールも設置しています。</p>
+                    </div>
+                </div>
+                <div class="text" id="forth">
+                    <div class="text_text">
+                        <p>　有料エリア応接室や重役室・会議室といった赤レンガの重要施設を開館当時のままに、復原したゾーンです。当時のまま再現された内装を十分鑑賞していただきながら、解体時に発見された資料や、銀行として活躍していた当時の資料を展示しています。</p>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/akarenga-yuuryou.jpg" alt="（仮）">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="menu" id="page_menu">
+                <li><a href="#first">>赤レンガ館</a></li>
+                <li><a href="#second">>辰野金吾</a></li>
+                <li><a href="#third">>無料エリア</a></li>
+                <li><a href="#forth">>有料エリア</a></li>
+            </div>
+        </aside>
+    </div>
+    <div class="Company">
+        <div class="Company_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12278.962652120465!2d141.13676068335178!3d39.70053454918933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8576266737ae2d%3A0xe8fd2bd52988fe21!2z5bKp5omL6YqA6KGM6LWk44Os44Oz44Ks6aSo!5e0!3m2!1sja!2sjp!4v1706146075462!5m2!1sja!2sjp" width="300" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="Company_adress">
+            <h2>住所</h2>
+            <h3>岩手銀行赤レンガ館</h3>
+            <p>〒020-0871</p>
+            <p>岩手県盛岡市中ノ橋通１丁目２−２０</p>
+            <p>☏　019-622-1236</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    $('#page_menu a[href*="#"]').click(function () {
+        var elmHash = $(this).attr('href');
+        var pos = $(elmHash).offset().top;
+        $('body,html').animate({scrollTop:pos}, 500);
+        return false
+    })
+</script>
+</html>
