@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/All-style.css">
+    <link rel="stylesheet" href="css/Food_5.css">
+    <link rel="icon" href="../img/Logo.png">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="body">
+        <main>
+            <div class="title">
+                <h1>南部せんべい</h1>
+            </div>
+            <div class="item">
+                <div class="text" id="first">
+                    <div class="text_img">
+                        <img src="img/南部せんべい/南部せんべい3.jpg" alt="南部せんべい1">
+                    </div>
+                    <div class="text_text">
+                        <p>南部せんべいは旧南部藩の領地だった <br>青森県南東部から岩手県北部にかけての伝統食品で、小麦粉と塩と水を混ぜて鉄型の型で焼いたものです。<br>
+                            南部煎餅の由来はいくつかありますが、 <br>600年ほど前、長慶天皇が南部地方巡幸の際、家臣が付近の農家から手に入れたそば粉を練って丸い形に焼き、胡麻をふったものを天皇に供したというものが代表的です。
+
+                        </p>
+                    </div>
+                </div>
+                <div class="text" id="second">
+                    <div class="text_text">
+                        <p>南部せんべいは、様々な種類があります。 <br> <br>小麦粉と塩を混ぜた生地を焼いた、最もシンプルな白せんべい。
+                            香ばしいゴマがたっぷりと入った大人の味のごませんべい。
+                            生地にピーナッツを入れて焼き上げたまめせんべい。
+                            たっぷりのさきいかを乗せたいかせんべいなど、とてもバラエティ豊かなものとなっています。
+                        </p>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/南部せんべい/南部せんべい２.jpg" alt="南部せんべい２">
+                    </div>
+                </div>
+                <div class="text" id="third">
+                    <div class="text_img">
+                        <img src="img/南部せんべい/南部せんべい４.jpg" alt="南部せんべい３">
+                    </div>
+                    <div class="text_text">
+                        <p>また、南部せんべいを使ったせんべい汁というものもあります。 <br>
+                            せんべい汁は、青森県八戸市周辺で生まれた南部地域の伝統的な郷土料理です。飢饉や凶作で米を食べることができなった際に、麦や蕎麦の粉から南部せんべいが生まれ、
+                            それを汁物にちぎって入れたことで、「せんべい汁」は誕生しました。<br>
+                            南部せんべいを使用しているため、どんなに煮込んでも溶けにくく、モチモチとおいしく食べることができ、食感はまるでパスタのアルデンテのようだといわれることもあります。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="menu" id="page_menu">
+                <li><a href="#first">>南部せんべいの発祥</a></li>
+                <li><a href="#second">>種類</a></li>
+                <li><a href="#third">>せんべい汁とは</a></li>
+            </div>
+        </aside>
+    </div>
+    <div class="Company">
+        <div class="Company_map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48718.018382141185!2d141.21962063125!3d40.25628370000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f84d1cf13b7f551%3A0x5e0c6dbf7460ea13!2z5Y2X6YOo44Gb44KT44G544GE5LmDIOW3luaJi-WxiyDmnKzlupc!5e0!3m2!1sja!2sjp!4v1705632232127!5m2!1sja!2sjp"
+                width="300" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="Company_adress">
+            <h2>住所</h2>
+            <h3>南部せんべい乃 巖手屋 本店</h3>
+            <p>〒028-6103</p>
+            <p>岩手県二戸市石切所前田41-1</p>
+            <p>☏　0195-23-2209</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    $('#page_menu a[href*="#"]').click(function () {
+        var elmHash = $(this).attr('href');
+        var pos = $(elmHash).offset().top;
+        $('body,html').animate({ scrollTop: pos }, 500);
+        return false
+    })
+</script>
+
+<footer>
+    <div class="footer_flex">
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.7227480856345!2d141.13102267477117!3d39.700937298895845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f857633390c2a33%3A0x7c805e4c44ea2745!2z5YWs55uK6LKh5Zuj5rOV5Lq65bKp5omL55yM6Kaz5YWJ5Y2U5Lya!5e0!3m2!1sja!2sjp!4v1701744317281!5m2!1sja!2sjp"
+                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="adress">
+            <h3>岩手県観光協会</h3>
+            <p>〒020-0045</p>
+            <p>盛岡市盛岡駅西通二丁目9番1号（マリオス3F）</p>
+            <p>電話：019-651-0626｜FAX：019-651-0637</p>
+        </div>
+        <div class="footer_logo">
+            <img src="../img/Logo.png" alt="Logo">
+        </div>
+    </div>
+    <p class="copyright">&copy; 盛岡情報ビジネス＆デザイン専門学校</p>
+</footer>
+
+</html>
