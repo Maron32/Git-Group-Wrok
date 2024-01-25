@@ -4,11 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="../template/Topic-temp-style.css">
     <link rel="stylesheet" href="../css/All-style.css">
     <link rel="stylesheet" href="css/Attraction_3.css">
-    <title>Document</title>
+    <title>小岩井農場牧園</title>
 </head>
 <body>
-    
+    <div class="body">
+        <main>
+            <div class="title">
+                <h1>小岩井農場</h1>
+            </div>
+            <div class="item" id="first">
+                <div class="text">
+                    <div class="text_img">
+                        <img src="img/小岩井農場.jpg" alt="小岩井農場">
+                    </div>
+                    <div class="text_text">
+                        <p>
+                            岩手県盛岡市から北西約12kmに位置し、岩手山南麓に約3,000ヘクタールの敷地面積を有する。
+                            その敷地の3分の2は雫石町、残り3分の1が滝沢市に属する。その内の約40ヘクタールが観光エリア
+                            “まきば園”として開放されている。
+                        </p>
+                    </div>
+                </div>
+            </div>  
+            <div class="item" id="secound"> 
+                <div class="text">
+                    <div class="text_text">
+                        <p>
+                            秀峰岩手山を背景に、小岩井農場の緑の大地に根を張る一本桜（樹種：エドヒガン）。
+                            詳しい樹齢は不明ですが、明治40年代に植えられたと言われています。
+                            一本桜があるこの草地は、今は農場の牛などの餌になる牧草を収穫する畑ですが、
+                            昔は牛の放牧地でした。牛は暑さが苦手なので、夏の強い日差しから牛を守る
+                            「日陰樹」として植えられたものです。
+                        </p>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/一本松.jpg" alt="小岩井一本桜">
+                    </div>
+                </div>
+            </div>
+            <div class="item" id="3rd">
+                <div class="text">
+                    <div class="text_img">
+                        <img src="img/小岩井農場雪まつり.jpg" alt="小岩井農場雪まつり">
+                    </div>
+                    <div class="text_text">
+                        <p>
+                            　冬のまつりとしては本州最大規模で、約10日間の開催期間で30万人前後の人が訪れる。
+                            入場無料。第45回目に当たる2012年は、2/4～2/12まで開催。<br>
+                            　1968年に「小岩井かまくら」の名称で第1回が開催された。
+                            夕暮れとともに12基のかまくらに火が灯り、雫石あねっこがワラグツ姿で登場し、
+                            ジンギスカン鍋を入れて入場者にサービスした。1971年の第4回にて、
+                            「小岩井かまくら」を「小岩井雪まつり」に名称変更して開催され、翌年の第5回から、
+                            「小岩井雪まつり」から「岩手雪まつり」へと変わった
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="menu" id="page_menu">
+                <li><a href="#first">>小岩井農場</a></li>
+                <li><a href="#secound">>一本桜</a></li>
+                <li><a href="#3rd">>岩手雪まつり</a></li>
+            </div>
+        </aside>
+    </div>
+    <div class="Company">
+        <div class="Company_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.5068153235143!2d141.0147734750573!3d39.75072789590665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8570f4d84be32f%3A0xe575bb75ee19826a!2z5bCP5bKp5LqV6L6y5aC0!5e0!3m2!1sja!2sjp!4v1705538148803!5m2!1sja!2sjp" 
+            width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="Company_adress">
+            <h2>住所</h2>
+            <h3>小岩井農場まきば園</h3>
+            <p>〒020-0507</p>
+            <p>岩手県岩手郡雫石町丸谷地</p>
+            <p>☏　019-692-4321</p>
+            <p>fax 019-692-0303</p>
+        </div>
+    </div>
 </body>
+<script>
+    $('#page_menu a[href*="#"]').click(function () {
+        var elmHash = $(this).attr('href');
+        var pos = $(elmHash).offset().top;
+        $('body,html').animate({scrollTop:pos}, 500);
+        return false
+    })
+</script>
 </html>

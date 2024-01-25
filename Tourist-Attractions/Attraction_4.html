@@ -4,11 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="../template/Topic-temp-style.css">
     <link rel="stylesheet" href="../css/All-style.css">
     <link rel="stylesheet" href="css/Attraction_4.css">
-    <title>Document</title>
+    <title>厳美渓</title>
 </head>
 <body>
-    
+    <div class="body">
+        <main>
+            <div class="title">
+                <h1>厳美渓</h1>
+            </div>
+            <div class="item" id="first">
+                <div class="text">
+                    <div class="text_img">
+                        <img src="img/厳美渓.jpg" alt="厳美渓">
+                    </div>
+                    <div class="text_text">
+                        <p>
+                            　栗駒山から一関市内へと流れる磐井川の浸食により、ゆっくりと時間をかけて形成された国の名勝、
+                            天然記念物・厳美渓。 <br>
+                            　エメラルドグリーンの水流に奇岩、巨岩、甌穴、深淵、滝など、
+                            約2kmにわたり「静」と「動」の渓谷美が続きます。 <br>
+                            　季節とともに変化する厳美渓の美しさに、
+                            仙台藩主・伊達政宗公は「松島と厳美が我が領土の二大景勝地なり」と
+                            賛美の言葉を残したと伝わります。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="secound">
+                <div class="text">
+                    <div class="text_text">
+                        <p>
+                            　空飛ぶ「かっこうだんご」は、東屋から籠にお金を入れて木づちを叩くと、
+                            対岸の店舗からだんごとお茶が飛んできます。 <br>
+                            　また、コーヒーやスイーツなどカフェメニューが豊富な「いつくしだんご」は、
+                            お土産選びや休憩もできます。
+                        </p>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/かっこう団子.jpg" alt="かっこう団子">
+                    </div>
+                </div>
+            </div>
+            <div id="3rd">
+                <div class="text">
+                    <div class="text_img">
+                        <img src="img/かっこう団子2.jpg" alt="かっこう団子本体">
+                    </div>
+                    <div class="text_text">
+                        <img src="img/スクリーンショット 2024-01-19 111455.png" alt="かっこう団子値段">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="menu" id="page_menu">
+                <li><a href="#first">>厳美渓</a></li>
+                <li><a href="#secound">>かっこう団子</a></li>
+                <li><a href="#3rd">>団子の値段</a></li>
+            </div>
+        </aside>
+    </div>
+    <div class="Company">
+        <div class="Company_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.116304428878!2d141.0435884269531!3d38.944171299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f88d1241b5f4359%3A0x20f3897e76ee0834!2z5Y6z576O5riT!5e0!3m2!1sja!2sjp!4v1705538396307!5m2!1sja!2sjp" 
+            width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="Company_adress">
+            <h2>住所</h2>
+            <h3>厳美渓</h3>
+            <p>〒021-0101</p>
+            <p>岩手県一関市厳美町滝ノ上</p>
+            <p>☏　0191-23-2350</p>
+        </div>
+    </div>
 </body>
+<script>
+    $('#page_menu a[href*="#"]').click(function () {
+        var elmHash = $(this).attr('href');
+        var pos = $(elmHash).offset().top;
+        $('body,html').animate({scrollTop:pos}, 500);
+        return false
+    })
+</script>
 </html>

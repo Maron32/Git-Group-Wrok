@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="../css/All-style.css">
+    <link rel="stylesheet" href="css/Attraction_6.css">
+    <link rel="stylesheet" href="../template/Topic-temp-style.css">
+    <title>猊鼻渓</title>
+</head>
+<body>
+    <div class="body">
+        <main>
+            <div class="title">
+                <h1>猊鼻渓</h1>
+            </div>
+            <div class="item">
+                <div class="text" id="1st">
+                    <div class="text_img">
+                        <img src="img/1766_3_l.jpg" alt="猊鼻渓">
+                    </div>
+                    <div class="text_text">
+                        <h2>神秘の水面に身をまかせ、<br>
+                            ゆらり気ままに舟の路
+                        </h2>
+                        <p>
+                            　悠久の時を経てそびえ立つ断崖絶壁と四季折々に変化する風景。<br>
+                            　「げいび追分」が響き渡る渓谷を、時を遡るように誘う幻想の世界、猊鼻渓へ。
+                        </p>
+                    </div>
+                </div>
+                <div class="text" id="2nd">
+                    <div class="text_text">
+                        <p>
+                            　日本百景の一つにも数えられる、名勝・猊鼻渓。 <br>　砂鉄川の浸食でできた高さ100メートルの絶壁に奇岩、
+                            洞窟、滝など迫力のある絶景が広がります。猊鼻渓名物といえば、船頭が棹一本で操る「舟下り」。<br>
+                            　春の新緑に始まり、5月の藤の花、10月には紅葉、そして雪景色と、四季折々の景色は壮観です。
+                        </p>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/img_spots_autumn01.jpg" alt="猊鼻渓の崖">
+                    </div>
+                </div>
+                <div class="text" id="3rd">
+                    <div class="text_img">
+                        <img src="img/shishigahana1.JPG" alt="獅子ヶ鼻">
+                    </div>
+                    <div class="text_text">
+                        <p>
+                            　折り返し地点の船着き場から散策道を進むと、猊鼻渓の名の由来となった奇岩「獅子ケ鼻」が出現します。<br>
+                            　また、茶席舟、舟上十六夜コンサートなど季節限定のイベントも多彩。 <br>　冬はアツアツの木流し鍋をいただく
+                            「こたつ舟」が運行されるなど、一年を通じて幅広い世代に愛される観光地となっています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="menu" id="page_menu">
+                <li><a href="#1st">>猊鼻渓</a></li>
+                <li><a href="#3rd">>獅子ヶ鼻</a></li>
+            </div>
+        </aside>
+    </div>
+    <div class="Company">
+        <div class="Company_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6202.273407807596!2d141.24714685390623!3d38.98937630000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f88c8a6b4aa3b57%3A0x790d1797bd4daae4!2z54yK6by75riT!5e0!3m2!1sja!2sjp!4v1706144846389!5m2!1sja!2sjp" 
+            width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="Company_adress">
+            <h2>住所</h2>
+            <h3>猊鼻渓</h3>
+            <p>〒029-0302</p>
+            <p>岩手県一関市東山町長坂町４６７</p>
+            <p>☏　0191-47-2341</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    $('#page_menu a[href*="#"]').click(function () {
+        var elmHash = $(this).attr('href');
+        var pos = $(elmHash).offset().top;
+        $('body,html').animate({scrollTop:pos}, 500);
+        return false
+    })
+</script>
+</html>
