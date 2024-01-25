@@ -5,10 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
     <link rel="stylesheet" href="../css/All-style.css">
+    <link rel="stylesheet" href="../template/Topic-temp-style.css">
     <link rel="stylesheet" href="css/Attraction_2.css">
-    <title>Document</title>
+    <title>龍泉洞</title>
 </head>
 <body>
-    
+    <div class="body">
+        <main>
+            <div class="title">
+                <h1>龍泉洞</h1>
+            </div>
+            <div class="item" id="first">
+                <div class="text">
+                    <div class="text_img">
+                        <img src="img/龍泉洞.jpg" alt="龍泉洞">
+                    </div>
+                    <div class="text_text">
+                        <p>
+                            龍泉洞は日本三大鍾乳洞の一つとされ、また洞内に棲むコウモリと共に国の天然記念物に指定されています。 <br>
+                            洞内総延長は知られている所で4,088mで、そのうち700mが公開中。 見つかっている地底湖は8つで、そのうち3つが公開中。
+                            現在も調査が継続中で未知の部分もまだまだ多く、総延長は5,000m以上ではないかと言われています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="secound">
+                <div class="text">
+                    <div class="text_text">
+                        <p>
+                            龍泉洞の水は世界でも有数の透明度を誇っていることで知られる。
+                            1985年（昭和60年）には龍泉洞地底湖の水として名水百選のひとつに選定されている。
+                            水量は1万7千m3／日以上の流量を有しており、岩泉町の水道水として利用されている他、
+                            ミネラルウォーターとしても商品化されており、カルシウム分を多く含む弱アルカリ性のおいしい水として全国に市販されている。
+                        </p>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/龍泉洞の水.jpg" alt="龍泉洞で販売されている水">
+                    </div>
+                </div>
+            </div>
+            <div id="3rd">
+                <div class="text">
+                    <div class="text_img">
+                        <img src="#" alt="（仮）">
+                    </div>
+                    <div class="text_text">
+                        <p>ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。ここに文字が入ります。</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="menu" id="page_menu">
+                <li><a href="#first">>龍泉洞</a></li>
+                <li><a href="#secound">>龍泉洞の水</a></li>
+                <li><a href="#3rd">>33333</a></li>
+            </div>
+        </aside>
+    </div>
+    <div class="Company">
+        <div class="Company_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3062.630851438202!2d141.7944193750635!3d39.86010498933092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8453e37117fa33%3A0xf7f6a724e9711e7f!2z6b6N5rOJ5rSe!5e0!3m2!1sja!2sjp!4v1705538289815!5m2!1sja!2sjp" 
+            width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="Company_adress">
+            <h2>住所</h2>
+            <h3>店の名前</h3>
+            <p>〒○○○-○○○</p>
+            <p>岩手県○○市○○町〇丁目○○-○○</p>
+            <p>☏　000-0000-0000</p>
+            <p>fax 000-0000-0000</p>
+        </div>
+    </div>
 </body>
+    <script>
+        $('#page_menu a[href*="#"]').click(function () {
+            var elmHash = $(this).attr('href');
+            var pos = $(elmHash).offset().top;
+            $('body,html').animate({scrollTop:pos}, 500);
+            return false
+        })
+    </script>
 </html>
