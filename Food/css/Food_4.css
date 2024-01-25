@@ -58,7 +58,7 @@ aside{
 
 .Company{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 100px;
 }
 
@@ -96,6 +96,18 @@ html {
 }
 
 .Company_adress {
-    margin-top: 40px;
-    margin-right: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.Company_map {
+    margin-right: 100px;
+}
+
+#p {
+    margin-top: 1.6rem;
+}
+
+#p1 {
+    margin-top: 0.5rem;
 }

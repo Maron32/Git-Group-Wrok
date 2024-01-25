@@ -1,14 +1,4 @@
-@charset "utf-8";
-
-
-.text_img_kakuteki {
-    width: 45%;
-}
-
-.text_img_kakuteki img {
-    width: 100%;
-    height: 80%;
-}
+@charset "UTF-8";
 
 .body{
     width: 80%;
@@ -58,7 +48,7 @@ aside{
 
 .Company{
     display: flex;
-    justify-content: center;
+    justify-content:center;
     margin-top: 100px;
 }
 
@@ -97,13 +87,13 @@ html {
 
 .Company_adress {
     margin-top: 20px;
+    margin-left: 20px;
 }
 
 .Company_map {
     margin-right: 100px;
 }
 
-.Company_adress {
-    margin-top: 20px;
-    margin-left: 20px;
+#second p {
+    margin-top: 1.5rem;
 }

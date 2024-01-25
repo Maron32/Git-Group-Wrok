@@ -1,68 +1,58 @@
-@charset "utf-8";
+@charset "UTF-8";
 
-
-.text_img_kakuteki {
-    width: 45%;
-}
-
-.text_img_kakuteki img {
-    width: 100%;
-    height: 80%;
-}
-
-.body{
+.body {
     width: 80%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
 }
 
-main{
+main {
     width: 80%;
 }
 
-aside{
+aside {
     width: 20%;
     margin-left: 100px;
 }
 
-.item{
+.item {
     margin-left: 15px;
     margin-right: 15px;
 }
 
-.title h1{
+.title h1 {
     font-size: 50px;
     border-bottom: solid gainsboro 2px;
     padding-left: 40px;
 }
 
-.text{
+.text {
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
 }
 
-.text_img{
+.text_img {
     width: 45%;
 }
 
-.text_img img{
+.text_img img {
     width: 100%;
     height: 100%;
 }
 
-.text_text{
-    width:45%;
+.text_text {
+    width: 45%;
 }
 
-.Company{
+.Company {
     display: flex;
     justify-content: center;
     margin-top: 100px;
 }
 
-.menu{
+.menu {
     padding: 30px 30px 20px 20px;
     text-align: center;
     background-color: #f4f4f4;
@@ -72,22 +62,22 @@ aside{
     top: 100px;
 }
 
-.menu li{
+.menu li {
     padding: 5px;
     list-style: none;
     color: black;
 }
 
-.menu li:hover{
+.menu li:hover {
     /* color: blue; */
 }
 
-.menu a{
+.menu a {
     text-decoration: none;
     color: black;
 }
 
-.menu li a:hover{
+.menu li a:hover {
     background: linear-gradient(transparent 70%, yellow 30%);
 }
 
@@ -95,15 +85,19 @@ html {
     scroll-behavior: smooth;
 }
 
-.Company_adress {
-    margin-top: 20px;
+#second p {
+    margin-top: 1.5rem;
 }
 
-.Company_map {
-    margin-right: 100px;
+#third p {
+    margin-top: 2rem;
 }
 
 .Company_adress {
     margin-top: 20px;
     margin-left: 20px;
+}
+
+.Company_map {
+    margin-right: 100px;
 }
