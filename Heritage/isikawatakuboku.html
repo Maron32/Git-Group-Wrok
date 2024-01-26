@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="../css/All-style.css">
+    <link rel="stylesheet" href="css/isikawatakuboku.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body">
+        <main>
+            <div class="title">
+                <h1>石川啄木</h1>
+            </div>
+            <div class="item">
+                <div class="text" id="first">
+                    <div class="text_img">
+                        <img src="img/takuboku.jpg" alt="（仮）">
+                    </div>
+                    <div class="text_text">
+                        <p>　石川啄木は、1886年に岩手で生まれ、『明星』に寄稿する浪漫主義詩人として頭角を現し、満19歳で最初の詩集を刊行しました。<br><br>
+                        　石川啄木は、唯一の男子として両親の愛情を一身に受け、村人からは神童と騒がれ、気位高く育いましたが、幼少期から病弱で、結核により、26歳に死去しました。<br><br>
+                        　有名な作品としては、歌集『一握の砂』、友人らの尽力で死後出版された『悲しき玩具』、詩集『呼子と口笛』等があります。</p>
+                    </div>
+                </div>
+                <div class="text" id="second">
+                    <div class="text_text">
+                        <p>　盛岡市中央通りに「啄木新婚の家」という場所があります。新婚の啄木が明治38年から3週間ほど暮らした家で、現存する盛岡唯一の武家屋敷。随筆「我が四畳半」にこの頃のことが書かれています。<br><br>
+                        　この家は昔ながらの建造物で、石川啄木がこの家で暮らしたのかと考えるととても趣があると思います。</p>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/takuboku-shinkonnoie.jpg" alt="（仮）">
+                    </div>
+                </div>
+                <div class="text" id="third">
+                    <div class="text_img">
+                        <img src="img/takuboku-kinenkan.jpg" alt="（仮）">
+                    </div>
+                    <div class="text_text">
+                        <p>　石川啄木の故郷である渋民に、啄木の顕彰と資料収集、保存、情報提供を目的として1970年に開館しました。現在の記念館は、啄木がかつて理想の「家」を詩に託した白い西洋風の家をイメージし、生誕100年を記念して1986年に建てられました。<br><br>
+                        　現在は改修工事に伴い令和6年12月まで休館していますが、啄木の作品を感じられるこの記念館に行ってみてはいかがでしょうか。</p>
+                    </div>
+                </div>
+                <div class="text" id="forth">
+                    <div class="text_text">
+                        <p>　石川啄木は少年時代とても成績優秀でした。小学校を首席で卒業。中学校を128人中10位で入学等成績は素晴らしいものでした。<br><br>
+                        　しかし、石川啄木は、中学で二度もカンニングをしており、それが原因で退学処分を受けています。<br><br>
+                        　有名な石川啄木でもカンニングで退学をしていると聞くと、親近感がわきます。</p>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/takuboku-tyuugaku.jpg" alt="（仮）">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="menu" id="page_menu">
+                <li><a href="#first">>石川啄木</a></li>
+                <li><a href="#second">>新婚の家</a></li>
+                <li><a href="#third">>記念館</a></li>
+                <li><a href="#forth">>カンニング</a></li>
+            </div>
+        </aside>
+    </div>
+    <div class="Company">
+        <div class="Company_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.4844458342645!2d141.13890697469037!3d39.70629429857452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8576375779016b%3A0xcc521bc97314d77a!2z5ZWE5pyo5paw5ama44Gu5a62!5e0!3m2!1sja!2sjp!4v1706162281212!5m2!1sja!2sjp" width="300" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="Company_adress">
+            <h2>住所</h2>
+            <h3>啄木新婚の家</h3>
+            <p>〒020-0021</p>
+            <p>岩手県盛岡市中央通３丁目１７−１８</p>
+            <p>☏　019-624-2193</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    $('#page_menu a[href*="#"]').click(function () {
+        var elmHash = $(this).attr('href');
+        var pos = $(elmHash).offset().top;
+        $('body,html').animate({scrollTop:pos}, 500);
+        return false
+    })
+</script>
+</html>

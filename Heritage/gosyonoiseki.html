@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="../css/All-style.css">
+    <link rel="stylesheet" href="css/gosyonoiseki.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="body">
+        <main>
+            <div class="title">
+                <h1>御所野遺跡</h1>
+            </div>
+            <div class="item">
+                <div class="text" id="first">
+                    <div class="text_img">
+                        <img src="img/gosyonoiseki.jpg" alt="（仮）">
+                    </div>
+                    <div class="text_text">
+                        <p>御所野遺跡は「北海道・北東北の縄文遺跡群」の構成資産の一つとして、2021年7月に世界遺産に登録されました。<br><br>
+                            縄文時代草創期から晩期の各時期の代表的な遺跡で構成されているほか、海岸や内陸の河川沿いに営まれた集落であったり、祭祀を行うためのセンター的性格の遺跡など、縄文時代を総合的にとらえることができる資産構成となっています。
+                        </p>
+                    </div>
+                </div>
+                <div class="text" id="second">
+                    <div class="text_text">
+                        <p>　御所野遺跡には、御所野縄文公園と、御所野縄文博物館に大きく施設が分けられます。<br><br>
+                            　縄文公園には、復元されたさまざまな建造物や村の跡、また建造物の焼失実験を行った跡も残っています。ここでは、縄文時代の人々がどのような場所でどのように暮らしていたかを身近に感じることができます。
+                        </p>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/gosyonoiseki-map.jpg" alt="（仮）">
+                    </div>
+                </div>
+                <div class="text" id="third">
+                    <div class="text_img">
+                        <img src="img/gosyonoiseki-hakubutukan.jpg" alt="（仮）">
+                    </div>
+                    <div class="text_text">
+                        <p>　御所野縄文博物館では、出土した物品などの展示のほか、「焼けた住居の発見」「御所野縄文ワールド」「火とまつり」のブースが展示されています。<br><br>
+                            　出土した物品の実物を見られるほか、ミュージアムショップもあるのでお土産を買うのにもいいと思います。</p>
+                    </div>
+                </div>
+                <div class="text" id="forth">
+                    <div class="text_text">
+                        <p>　御所野縄文博物館では、体験コーナーがあり、土日祝は予約なしでさまざまな体験をすることができます。<br><br>
+                            　縄文土器制作や、勾玉づくり、ストラップづくりなどさまざまな体験ができるので思い出作りにもなるので体験してみてはどうでしょうか。</p>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/gosyonoiseki-doki.jpg" alt="（仮）">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="menu" id="page_menu">
+                <li><a href="#first">>御所野遺跡</a></li>
+                <li><a href="#second">>公園</a></li>
+                <li><a href="#third">>博物館</a></li>
+                <li><a href="#forth">>制作体験</a></li>
+            </div>
+        </aside>
+    </div>
+    <div class="Company">
+        <div class="Company_map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1523.7447813189585!2d141.30435966347656!3d40.198171699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f84da420b07a10d%3A0x10f08215f4f59de5!2z5b6h5omA6YeO6YG66Leh!5e0!3m2!1sja!2sjp!4v1706236548800!5m2!1sja!2sjp"
+                width="300" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="Company_adress">
+            <h2>住所</h2>
+            <h3>御所野遺跡</h3>
+            <p>〒028-5316</p>
+            <p>岩手県二戸郡一戸町岩舘</p>
+            <p>☏　0195-32-2652</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    $('#page_menu a[href*="#"]').click(function () {
+        var elmHash = $(this).attr('href');
+        var pos = $(elmHash).offset().top;
+        $('body,html').animate({ scrollTop: pos }, 500);
+        return false
+    })
+</script>
+
+</html>

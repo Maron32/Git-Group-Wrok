@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="../css/All-style.css">
+    <link rel="stylesheet" href="css/miyazawakenzi.css">
+    <link rel="icon" href="../img/Logo.png">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body">
+        <main>
+            <div class="title">
+                <h1>宮沢賢治</h1>
+            </div>
+            <div class="item">
+                <div class="text" id="first">
+                    <div class="text_img">
+                        <img src="img/miyazawakenzi.jpg" alt="（仮）">
+                    </div>
+                    <div class="text_text">
+                        <p>　宮沢賢治は1896年（明治29年）8月27日、稗貫郡花巻川口町（現花巻市豊沢町）にて質・古着商を営む宮沢政次郎とイチの長男として生まれました。<br><br>
+                            　作品中に登場する架空の理想郷に、郷里の岩手県をモチーフとしてイーハトーヴと名付けたことで知られます。また、彼の作品は生前ほとんど一般には知られず無名に近く、没後、草野心平らの尽力により作品群が広く知られ、世評が急速に高まり国民的作家となっていき、今でも日本には広く愛好者が存在します。
+                        </p>
+                    </div>
+                </div>
+                <div class="text" id="second">
+                    <div class="text_text">
+                        <p>　宮沢賢治は数々の有名作品を残しています。「雨にも負けず」「注文の多い料理店」「セロ弾きのゴーシュ」「銀河鉄道の夜」など、まだまだ作品があります。<br><br>
+                        　どの作品にも共通していることは、さまざまな考察ができるということです。岩手に実際に来なくてもさまざまな作品を読むことができるので読んでみてはいかがでしょうか。</p>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/miyazawakenzi-book.jpg" alt="（仮）">
+                    </div>
+                </div>
+                <div class="text" id="third">
+                    <div class="text_img">
+                        <img src="img/miyazawakenzi-kinenkan.jpg" alt="（仮）">
+                    </div>
+                    <div class="text_text">
+                        <p>　宮沢賢治の故郷、花巻市には宮沢賢治記念館があります。ここでは、スクリーン映像などによる宮沢賢治の紹介や、宮沢賢治の愛用品、原稿などが展示されています。<br><br>
+                        　自然豊かな場所にあるため安らかな空間を楽しむこともでます。ぜひ、訪れてみてはいかがでしょうか。</p>
+                    </div>
+                </div>
+                <div class="text" id="forth">
+                    <div class="text_text">
+                        <p>　宮沢賢治記念館のすぐ近くには、宮沢賢治の童話に出てきそうな空間が広がる施設がある宮沢賢治童話村があります。<br><br>
+                        　また、例年7月下旬～10月下旬にかけて、期間限定ライトアップイベント「童話村の森ライトアップ」が開催されます。きれいな空間が広がっているので、おすすめです。</p>
+                    </div>
+                    <div class="text_img">
+                        <img src="img/miyazawakenzi-douwamura.jpg" alt="（仮）">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="menu" id="page_menu">
+                <li><a href="#first">>宮沢賢治</a></li>
+                <li><a href="#second">>賢治の童話</a></li>
+                <li><a href="#third">>記念館</a></li>
+                <li><a href="#forth">>童話村</a></li>
+            </div>
+        </aside>
+    </div>
+    <div class="Company">
+        <div class="Company_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3083.1014231701083!2d141.16009497467147!3d39.39921141694151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8f60a1df7e3215%3A0x7619220368e9cca4!2z5a6u5rKi6LOi5rK76KiY5b-16aSo!5e0!3m2!1sja!2sjp!4v1706159273001!5m2!1sja!2sjp" width="300" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+        <div class="Company_adress">
+            <h2>住所</h2>
+            <h3>宮沢賢治記念館</h3>
+            <p>〒025-0011</p>
+            <p>岩手県花巻市矢沢第１地割１−３６</p>
+            <p>☏　0198-31-2319</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    $('#page_menu a[href*="#"]').click(function () {
+        var elmHash = $(this).attr('href');
+        var pos = $(elmHash).offset().top;
+        $('body,html').animate({scrollTop:pos}, 500);
+        return false
+    })
+</script>
+</html>
