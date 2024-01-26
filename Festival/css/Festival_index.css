@@ -16,6 +16,7 @@
 .festival_title_p {
     position: absolute;
     color: black;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
     font-size: 40px;
     top: 20px;
     left: 700px;
