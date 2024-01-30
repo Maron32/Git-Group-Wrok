@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inquiry-style.css">
+    <title>お問い合わせ</title>
+</head>
+
+<body class="content_all">
+    <div class="contet_area">
+        <header>
+            <div class="header_1">
+                <h2>お問い合わせ</h2>
+                <hr width="50%">
+                <p>下記フォームに必要事項を入力後、確認ボタンを押してください。</p>
+            </div>
+        </header>
+
+        <div class="table_1">
+            <table class="content_table">
+                <tr class="teble_list">
+                    <th> <label for="name">お名前 <span>※必須</span></label></th>
+                    <td><input type="text" name="user_name" placeholder="お名前をご入力ください。"></td>
+                </tr>
+                <tr class="teble_list">
+                    <th> <label for="user_email">メールアドレス<span>※必須</span></label></th>
+                    <td><input type="text" name="user_email" placeholder="メールアドレスをご入力ください。"></td>
+                </tr>
+                <tr class="teble_list">
+                    <th> <label for="user_tel">電話番号</label></th>
+                    <td><input type="text" name="user_tel" placeholder="電話番号をご入力ください。"></td>
+                </tr>
+                <tr class="teble_list">
+                    <th> <label>性別</label></th>
+                    <td><input type="radio">男</td>
+                    <td><input type="radio">女</td>
+                    <td><input type="radio">その他</td>
+                </tr>
+                <tr class="teble_list">
+                    <th><label>お問い合わせ種別<span>必須</span></label></th>
+                    <td>
+                        <select name="type">
+                            <option value="" disabled selected style="display:none;">種別を選択
+                            <option value="">取材</option>
+                            <option value="">サイトについて</option>
+                            <option value="">その他</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="teble_list">
+                    <th><label>お問い合わせ内容</label></th>
+                    <td><textarea name="coment" id="coment" cols="30" rows="10"></textarea></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="btn">
+            <input class="btn_1" type="submit" value="送信する">
+        </div>
+
+    </div>
+</body>
+
+</html>
