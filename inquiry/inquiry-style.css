@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.content_all {
+    background: #e4eeef;
+    padding: 100px 0;
+    margin: 30px auto 0;
+    font-family: 'HGP明朝B', sans-serif;
+}
+
+.header_1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contet_area {
+    background: #fafafa;
+    padding: 30px;
+    margin: 0 auto;
+    width: 700px;
+}
+
+.content_table {
+    width: 100%;
+}
+
+.teble_list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px 50px;
+}
+
+.btn {
+    text-align: center;
+
+}
+
+.btn_1 {
+    border: 1px solid;
+    width: 10rem;
+    height: 3rem;
+    background-color: #fffaf0;
+}
