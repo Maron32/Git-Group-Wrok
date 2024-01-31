@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    margin-top: 100px;
 }
 
 main{
@@ -83,4 +84,8 @@ aside{
 
 html {
     scroll-behavior: smooth;
+}
+
+.menu{
+    text-align: left;
 }

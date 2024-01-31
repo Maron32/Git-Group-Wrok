@@ -86,3 +86,7 @@ aside{
 html {
     scroll-behavior: smooth;
 }
+
+.menu{
+    text-align: left;
+}
