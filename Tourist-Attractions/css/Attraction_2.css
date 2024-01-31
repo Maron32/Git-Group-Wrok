@@ -103,3 +103,7 @@ html {
 .text_text p{
     line-height: 1.8;
 }
+
+.menu{
+    text-align: left;
+}

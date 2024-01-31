@@ -108,3 +108,7 @@ html {
     text-align: center;
     border-bottom: solid 2px gainsboro;
 }
+
+.menu{
+    text-align: left;
+}
